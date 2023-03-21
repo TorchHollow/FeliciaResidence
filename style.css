@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Kanit:ital,wght@1,700&display=swap');
+
+:root{
+    --cor-do-titulo: #8d8885;
+    --cor-primaria: #103e38;
+    --cor-secundaria: #d9d9d9;
+    --cor-do-texto: #3C362D ;
+    --fonte-do-titulo:'Kanit', sans-serif;
+    --fonte-do-texto:'Barlow', sans-serif;
+}

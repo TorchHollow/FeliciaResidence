@@ -8,3 +8,73 @@
     --fonte-do-titulo:'Kanit', sans-serif;
     --fonte-do-texto:'Barlow', sans-serif;
 }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: auto;
+}
+
+.titulo {
+    background-color: var(--cor-do-titulo);
+    overflow: hidden;
+    font-family:'Kanit', sans-serif ;
+  }
+  
+  .titulo a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .titulo a:hover {
+    background-color: var(--cor-primaria);
+  }
+  
+  .titulo a.active {
+    background-color: var(--cor-primaria);
+  }
+  
+  .titulo .icon {
+    display: none;
+  }
+
+@media screen and (max-width: 600px) {
+    .titulo a:not(:first-child) {display: none;}
+    .titulo a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    .titulo a:not(:first-child) {float: right; padding-left: 25px;}
+  }
+  
+  @media screen and (max-width: 600px) {
+    .titulo.responsive {position: relative;}
+    .titulo.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .titulo.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }

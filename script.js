@@ -23,3 +23,16 @@ function abrirGaleria(evt, nomeDaCidade) {
   document.getElementById(nomeDaCidade).style.display = "block"
   evt.currentTarget.className += " ativo"
 }
+
+function clickarImagem(imgs) {
+
+    let expandImg = document.getElementById("expandedImg")
+
+    let imgText = document.getElementById("imgtext")
+
+    expandImg.src = imgs.src
+
+    imgText.innerHTML = imgs.alt
+
+    expandImg.parentElement.style.display = "block"
+}

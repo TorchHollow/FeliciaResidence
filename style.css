@@ -305,6 +305,8 @@ h3 {
 
 .galeria-tab {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .galeria-tab button {
@@ -315,6 +317,7 @@ h3 {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+  font-family: 'Kanit', sans-serif;
 }
 
 .galeria-tab button:hover{
@@ -330,4 +333,49 @@ h3 {
   padding: 6px 12px;
   border: 1px solid #103e38;
   border-top:none ;
+}
+
+.column{
+  float: left;
+  width: 25%;
+  padding: 15px;
+}
+
+.column img{
+  opacity: 0.8;
+  cursor: pointer;
+  width: 100%;
+}
+
+.column img:hover{
+  opacity: 1;
+}
+
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.galeria-container{
+  position: relative;
+  display: none;
+}
+
+#imgtext{
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.fecharbtn{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+
 }

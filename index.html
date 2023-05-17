@@ -13,186 +13,21 @@
 <body>
 
     <header class="titulo" id="meuTitulo">
-        <a href="#home" class="active">FELICIA Residence</a>
-        <a href="#apartamento">Apartamento</a>
-        <a href="#status">Status da obra</a>
-        <a href="#localizacao">Localização</a>
-        <a href="#contato">Contato</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+        <a href="#home" class="active">FELICIA <span>Residence</span></a>
+        <div class="ti-link">
+            <a href="#apartamento">Apartamento</a>
+            <a href="#status">Status da obra</a>
+            <a href="#localizacao">Localização</a>
+            <a href="#contato">Contato</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        
     </header>
 
-    <section class="intro">
-        <div class="intro-texto">
-            <h1>um novo jeito de morar bem em guarulhos</h1>
-            <p>Apartamentos localizados em privilegiada, para você viver com qualidade de vida, conforto e acesso fácil
-                aos melhores lugares da cidade.</p>
-            <a href="#">fazer simulação agora</a>
-        </div>
-    </section>
+    <script defer src="./script.js"></script>
 
-    <section class="constru">
-
-        <div class="info">
-            <h1>FELICIA residence</h1>
-            <h1>em GUARULHOS</h1>
-            <P>Em construção</P>
-            <br>
-            <h3>46,07 a 48,57</h3>
-            <p>de área privativa nos apartamentos</p>
-            <br>
-            <h3>2 dormitórios</h3>
-            <p>construídos com aproveitamento de espaço</p>
-            <br>
-            <h3>1 vaga de garagem</h3>
-            <p>com cobertura</p>
-            <br>
-            <h3>Apartamentos com</h3>
-            <h3>opção gardens-jardim</h3>
-            <p>para você desfrutar de mais espaço</p>
-
-        </div>
-
-        <div class="info-2">
-            <div class="info-2-con">
-                <h1>Venha viver seu sonho no Felicia Residence</h1>
-                <p>Pensado para você que busca bem-estar, conforto e segurança, sem abrir mão de estar perto dos
-                    melhores
-                    lugares da cidade, morando em um apto construido com padrões de acabamento de primeira linha e com
-                    alto potencial de valorização</p>
-            </div>
-        </div>
-
-        <div class="apart">
-            <img src="./Source/apart.jpg" alt="">
-        </div>
-
-    </section>
-
-    <section class="galeria">
-
-        <h1>Conheça seu futuro apartamento</h1>
-
-        <div class="galeria-tab">
-            <button class="tablinks" onclick="abrirGaleria(event, 'Tudo')">Tudo</button>
-            <button class="tablinks" onclick="abrirGaleria(event, 'Ambiente')">Ambiente Interno</button>
-            <button class="tablinks" onclick="abrirGaleria(event, 'Areas')">Áreas Externas</button>
-            <button class="tablinks" onclick="abrirGaleria(event, 'Plantas')">Plantas</button>
-        </div>
-
-        <div id="Tudo" class="tabcontent" style="display: block;">
-            <div class="row">
-                <div class="column">
-                    <img src="./Source/apart.jpg" alt="Tudo1" onclick="clickarImagem(this)">
-                </div>
-
-                <div class="column">
-                    <img src="./Source/apart.jpg" alt="Tudo2" onclick="clickarImagem(this)">
-                </div>
-
-                <div class="column">
-                    <img src="./Source/apart.jpg" alt="Tudo3" onclick="clickarImagem(this)">
-                </div>
-
-                <div class="column">
-                    <img src="./Source/apart.jpg" alt="Tudo4" onclick="clickarImagem(this)">
-                </div>
-
-                <br>
-
-                <div class="column">
-                    <img src="./Source/externo.jpg" alt="Ambiente1" onclick="clickarImagem(this)">
-                </div>
-
-                <div class="column">
-                    <img src="./Source/externo.jpg" alt="Ambiente2" onclick="clickarImagem(this)">
-                </div>
-
-                <div class="column">
-                    <img src="./Source/externo.jpg" alt="Ambiente3" onclick="clickarImagem(this)">
-                </div>
-
-                <div class="column">
-                    <img src="./Source/externo.jpg" alt="Ambiente4" onclick="clickarImagem(this)">
-                </div>
-            </div>
-
-            <div class="galeria-container">
-
-                <span onclick="this.parentElement.style.display='none'" class="fecharbtn">&times</span>]
-
-                <img id="expandedImg" style="width: 100%;">
-
-                <div id="imgtext"></div>
-            </div>
-
-        </div>
-
-        <div id="Ambiente" class="tabcontent">
-            <div class="row">
-                <div class="column">
-                    <img src="./Source/externo.jpg" alt="Ambiente1" onclick="clickarImagem(this)">
-                </div>
-
-                <div class="column">
-                    <img src="./Source/externo.jpg" alt="Ambiente2" onclick="clickarImagem(this)">
-                </div>
-
-                <div class="column">
-                    <img src="./Source/externo.jpg" alt="Ambiente3" onclick="clickarImagem(this)">
-                </div>
-
-                <div class="column">
-                    <img src="./Source/externo.jpg" alt="Ambiente4" onclick="clickarImagem(this)">
-                </div>
-            </div>
-
-            <div class="galeria-container">
-
-                <span onclick="this.parentElement.style.display='none'" class="fecharbtn">&times</span>]
-
-                <img id="expandedImg" style="width: 100%;">
-
-                <div id="imgtext"></div>
-            </div>
-        </div>
-
-        <div id="Areas" class="tabcontent">
-            <div class="row">
-                <div class="column">
-                    <img src="./Source/interno.jpg" alt="Areas1" onclick="clickarImagem(this)">
-                </div>
-
-                <div class="column">
-                    <img src="./Source/interno.jpg" alt="Areas2" onclick="clickarImagem(this)">
-                </div>
-
-                <div class="column">
-                    <img src="./Source/interno.jpg" alt="Areas3" onclick="clickarImagem(this)">
-                </div>
-
-                <div class="column">
-                    <img src="./Source/interno.jpg" alt="Areas4" onclick="clickarImagem(this)">
-                </div>
-            </div>
-
-            <div class="galeria-container">
-
-                <span onclick="this.parentElement.style.display='none'" class="fecharbtn">&times</span>]
-
-                <img id="expandedImg" style="width: 100%;">
-
-                <div id="imgtext"></div>
-            </div>
-        </div>
-
-        <div id="Plantas" class="tabcontent">
-            <h1>Xereca</h1>
-        </div>
-    </section>
-
-    <script src="./script.js"></script>
 </body>
 
 </html>

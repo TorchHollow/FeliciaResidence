@@ -7,32 +7,3 @@ function myFunction() {
   }
 }
 
-function abrirGaleria(evt, nomeDaCidade) {
-  let i, tabcontent, tablinks
-
-  tabcontent = document.getElementsByClassName("tabcontent")
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none"
-  }
-
-  tablinks = document.getElementsByClassName("tablinks")
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace("ativo", "")
-  }
-
-  document.getElementById(nomeDaCidade).style.display = "block"
-  evt.currentTarget.className += " ativo"
-}
-
-function clickarImagem(imgs) {
-
-    let expandImg = document.getElementById("expandedImg")
-
-    let imgText = document.getElementById("imgtext")
-
-    expandImg.src = imgs.src
-
-    imgText.innerHTML = imgs.alt
-
-    expandImg.parentElement.style.display = "block"
-}

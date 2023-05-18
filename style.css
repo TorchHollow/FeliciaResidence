@@ -42,7 +42,7 @@ body {
   font-size: 17px;
 }
 
-.ti-link a{
+.ti-link a {
   float: right;
   display: block;
   padding: 25px 16px;
@@ -56,9 +56,9 @@ body {
   font-size: 25px;
 }
 
-.titulo span{
+.titulo span {
   font-size: 15px;
-  
+
 }
 
 .titulo .icon {
@@ -86,7 +86,7 @@ body {
     font-size: 17px;
   }
 
-  .ti-link a{
+  .ti-link a {
     float: none;
     display: none;
     padding: 14px 16px;
@@ -116,5 +116,49 @@ body {
     float: none;
     display: block;
     text-align: left;
+  }
+}
+
+.intro {
+  width: 100%;
+  height: auto;
+  background-color: var(--cor-secundaria);
+  padding:40px 0px 80px 225px;
+}
+
+.intro-texto {
+  max-width: clamp(300px, 2.5vw, 450px);
+}
+
+.intro-texto h1 {
+  font-family: var(--fonte-do-titulo);
+  font-size: clamp(15px, 30px, 40px);
+  text-transform: uppercase;
+}
+
+.intro-texto p {
+  font-family: var(--fonte-do-texto);
+  font-size: clamp(5px, 15px, 25px);
+  padding-bottom: 10px;
+}
+
+.intro-texto a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--cor-primaria);
+  padding: 15px 30px;
+  border-radius: 20px 0px;
+}
+
+@media screen and (max-width: 600px){
+  .intro{
+    padding:20px 0 40px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro-texto{
+    text-align: center;
   }
 }

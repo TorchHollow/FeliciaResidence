@@ -127,18 +127,18 @@ body {
 }
 
 .intro-texto {
-  max-width: clamp(300px, 2.5vw, 450px);
+  max-width: clamp(300px, 3vw, 600px);
 }
 
 .intro-texto h1 {
   font-family: var(--fonte-do-titulo);
-  font-size: clamp(15px, 30px, 40px);
+  font-size: clamp(20px, 2.5vw, 40px);
   text-transform: uppercase;
 }
 
 .intro-texto p {
   font-family: var(--fonte-do-texto);
-  font-size: clamp(5px, 15px, 25px);
+  font-size: clamp(15px, 0.5vw, 30px);
   padding-bottom: 10px;
 }
 
@@ -147,7 +147,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   background-color: var(--cor-primaria);
-  padding: 15px 30px;
+  padding: 10px 25px;
   border-radius: 20px 0px;
 }
 

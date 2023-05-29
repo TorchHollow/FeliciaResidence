@@ -141,7 +141,7 @@ body {
 
 .intro-texto h1 {
   font-family: var(--fonte-do-titulo);
-  -ms-font-family:'Kanit', sans-serif;
+  -ms-font-family: 'Kanit', sans-serif;
   -ms-font-size: 50px;
   font-size: clamp(30px, 2.5vw, 50px);
   text-transform: uppercase;
@@ -150,7 +150,7 @@ body {
 
 .intro-texto p {
   font-family: var(--fonte-do-texto);
-  -ms-font-family:'Barlow', sans-serif;
+  -ms-font-family: 'Barlow', sans-serif;
   font-size: clamp(20px, 0.5vw, 30px);
   -ms-font-size: 30px;
   padding-bottom: 10px;
@@ -197,8 +197,9 @@ body {
 @media (max-width:1500px) and (min-width:760px) {
   .intro {
     width: 100%;
-    height: clamp(300px, 3vh, 600px);
+    height: clamp(400px, 3vh, 800px);
     position: relative;
+    padding-bottom: 50px;
   }
 
   .intro-texto {
@@ -221,93 +222,157 @@ body {
     padding-bottom: 10px;
   }
 
-  .intro-texto a{
+  .intro-texto a {
     padding: 10px 30px;
   }
 }
 
-.especi{
+.especi {
   width: 100%;
-  height: clamp(550px, 3vh, 800px);
+  height: clamp(800px, 1vh, 1000px);
   position: relative;
   background-color: var(--cor-primaria);
 }
 
-.especi-div{
+.especi-div {
   position: absolute;
   left: 20%;
-  top: 2%;
+  top: 5%;
 }
 
-.especi-div h1{
+.especi-div h1 {
   font-family: var(--fonte-do-titulo);
-  -ms-font-family:'Kanit', sans-serif;
+  -ms-font-family: 'Kanit', sans-serif;
   -ms-font-size: 50px;
   font-size: clamp(30px, 2.5vw, 50px);
 }
 
-.especi-div h1:nth-child(1){
+.especi-div h1:nth-child(1) {
   color: var(--cor-do-titulo);
   font-size: clamp(70px, 2.5vw, 120px);
 }
 
-.especi-div h1:nth-child(2){
+.especi-div h1:nth-child(2) {
   color: var(--cor-do-titulo);
 }
 
-.s1{
+.s1 {
   font-size: clamp(10px, 2.5vw, 25px);
 }
 
-.s2{
+.s2 {
   text-transform: uppercase;
   color: var(--cor-do-texto);
 }
 
-.especi-div p{
+.especi-div p {
   font-family: var(--fonte-do-texto);
   color: var(--cor-secundaria);
-  -ms-font-family:'Barlow', sans-serif;
+  -ms-font-family: 'Barlow', sans-serif;
   font-size: clamp(20px, 0.5vw, 30px);
   -ms-font-size: 30px;
   padding-bottom: 10px;
 }
 
-.especi-div h3{
+.especi-div h3 {
   font-family: var(--fonte-do-texto);
   color: var(--cor-do-titulo);
-  -ms-font-family:'Barlow', sans-serif;
+  -ms-font-family: 'Barlow', sans-serif;
   font-size: clamp(25px, 0.5vw, 30px);
   -ms-font-size: 30px;
   font-weight: 600;
 }
 
-@media screen and (max-width: 750px){
-  .especi{
+.especi-slogan {
+  position: absolute;
+  left: 25%;
+  top: 70%;
+  background-color: var(--cor-secundaria);
+  max-width: 50%;
+  padding: 40px 40px;
+  border-radius: 20px;
+}
+
+.especi-slogan h1 {
+  display: flex;
+  justify-content: center;
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  padding-bottom: 10px;
+  font-family: var(--fonte-do-titulo);
+  color: var(--cor-primaria);
+}
+
+.especi-slogan p {
+  font-family: var(--fonte-do-texto);
+  color: var(--cor-do-texto);
+  text-align: center;
+  font-size: clamp(1rem, 1vw, 2rem);
+}
+
+@media screen and (max-width: 750px) {
+  .especi {
     height: auto;
     display: flex;
     justify-content: center;
   }
 
-  .especi-div{
+  .especi-div {
     position: unset;
   }
 
-  .especi-div h1:nth-child(1){
+  .especi-div h1:nth-child(1) {
     color: var(--cor-do-titulo);
     font-size: clamp(60px, 2.5vw, 80px);
   }
-  
-  .especi-div h1:nth-child(2){
+
+  .especi-div h1:nth-child(2) {
     color: var(--cor-do-titulo);
   }
-  
-  .s1{
+
+  .s1 {
     font-size: clamp(20px, 2.5vw, 25px);
   }
-  
-  .s2{
+
+  .s2 {
     text-transform: uppercase;
     color: var(--cor-do-texto);
+  }
+
+  .especi-slogan{
+    left: 0;
+    top: 100%;
+    max-width: unset;
+    padding: 40px 40px;
+    border-radius: 20px;
+  }
+
+  .especi-slogan h1 {
+    text-align: center;
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+  }
+  
+  .especi-slogan p {
+    text-align: center;
+    font-size: clamp(1rem, 1vw, 2rem);
   }  
+  
+}
+
+@media (max-width:1500px) and (min-width:760px){
+  .especi {
+    width: 100%;
+    height: clamp(850px, 2vh, 1000px);
+    position: relative;
+    background-color: var(--cor-primaria);
+  }
+
+  .especi-slogan {
+    position: absolute;
+    left: 25%;
+    top: 65%;
+    background-color: var(--cor-secundaria);
+    max-width: 50%;
+    padding: 40px 40px;
+    border-radius: 20px;
+  }
 }

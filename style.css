@@ -20,49 +20,49 @@
 
 @keyframes transitionIn {
   from {
-      opacity: 0;
-      transform: rotateX(-10deg);
+    opacity: 0;
+    transform: rotateX(-10deg);
   }
 
   to {
-      opacity: 1;
-      transform: rotateX(0);
+    opacity: 1;
+    transform: rotateX(0);
   }
 }
 
 @keyframes fade-bottom {
   0% {
-      transform: translateY(50px);
-      opacity: 0;
+    transform: translateY(50px);
+    opacity: 0;
   }
 
   100% {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @keyframes fade-left {
   0% {
-      transform: translateX(-100px);
-      opacity: 0;
+    transform: translateX(-100px);
+    opacity: 0;
   }
 
   100% {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
 @keyframes fade-right {
   0% {
-      transform: translateX(100px);
-      opacity: 0;
+    transform: translateX(100px);
+    opacity: 0;
   }
 
   100% {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -251,7 +251,7 @@ body {
     height: clamp(400px, 3vh, 800px);
     position: relative;
     padding-bottom: 50px;
-    
+
   }
 
   .intro-texto {
@@ -392,7 +392,7 @@ body {
     color: var(--cor-do-texto);
   }
 
-  .especi-slogan{
+  .especi-slogan {
     left: 0;
     top: 100%;
     max-width: unset;
@@ -404,15 +404,15 @@ body {
     text-align: center;
     font-size: clamp(1.5rem, 2vw, 2.5rem);
   }
-  
+
   .especi-slogan p {
     text-align: center;
     font-size: clamp(1rem, 1vw, 2rem);
-  }  
-  
+  }
+
 }
 
-@media (max-width:1500px) and (min-width:760px){
+@media (max-width:1500px) and (min-width:760px) {
   .especi {
     width: 100%;
     height: clamp(850px, 2vh, 1000px);
@@ -431,7 +431,7 @@ body {
   }
 }
 
-.apart-prin img{
+.apart-prin img {
   width: clamp(40%, 3vw, 60%);
   left: 55%;
   bottom: 35%;
@@ -440,28 +440,87 @@ body {
   animation: fade-right 0.5s ease-in;
 }
 
-@media screen and (max-width: 750px){
-  .apart-prin{
+@media screen and (max-width: 750px) {
+  .apart-prin {
     display: none;
   }
 }
 
-@media (max-width:949px) and (min-width:751px){
-  .apart-prin img{
+@media (max-width:949px) and (min-width:751px) {
+  .apart-prin img {
     width: clamp(35%, 3vw, 50%);
     left: 60%;
     bottom: 100%;
   }
 }
 
-@media (max-width:1500px) and (min-width:950px){
-  .apart-prin img{
+@media (max-width:1500px) and (min-width:950px) {
+  .apart-prin img {
     width: clamp(45%, 3vw, 60%);
     height: 800px;
     left: 55%;
     bottom: 50%;
   }
 }
+
+.galeria {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-top: 30px;
+}
+
+.galeria h1 {
+  text-align: center;
+  font-family: var(--fonte-do-titulo);
+  font-size: clamp(30px, 2vw, 40px);
+  color: var(--cor-do-texto);
+  text-transform: uppercase;
+}
+
+.tab {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: clamp(15px, 1vw, 20px);
+  font-family: var(--fonte-do-titulo);
+  text-transform: uppercase;
+  color: var(--cor-do-texto);
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  animation: fadeEffect 1s;
+}
+
+.topright{
+  float: right;
+  cursor: pointer;
+  font-size: 28px
+}
+
+.topright:hover {color: red;}
 
 /*Animação*/
 .revelacao {
@@ -492,4 +551,14 @@ body {
 
 .ativo.fade-right {
   animation: fade-right 0.5s ease-in;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

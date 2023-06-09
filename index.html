@@ -70,6 +70,39 @@
 
     </section>
 
+    <section class="galeria">
+
+        <h1>conheça seu futuro apartamento</h1>
+
+        <div class="tab">
+            <button class="tablinks" onclick="abrirImagem(event, 'Tudo')" id="defaultOpen">tudo</button>
+            <button class="tablinks" onclick="abrirImagem(event, 'Ambiente')">ambiente interno</button>
+            <button class="tablinks" onclick="abrirImagem(event, 'Areas')">areas externas</button>
+            <button class="tablinks" onclick="abrirImagem(event, 'Plantas')">plantas</button>
+        </div>
+
+        <div id="Tudo" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+            <h2>Pa</h2>
+        </div>
+
+        <div id="Ambiente" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+            <h2>Pe</h2>
+        </div>
+
+        <div id="Areas" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+            <h2>Va</h2>
+        </div>
+
+        <div id="Plantas" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+            <h2>Bu</h2>
+        </div>
+
+    </section>
+
     <script defer src="./script.js"></script>
 
 </body>

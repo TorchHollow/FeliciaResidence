@@ -577,6 +577,30 @@ body {
   cursor: pointer;
 }
 
+.exclusivas{
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-top: 40px;
+}
+
+.exclusivas h1{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-family: var(--fonte-do-titulo);
+}
+
+@media screen and (max-width: 750px){
+  .exclusivas{
+    padding-top: 25px;
+  }
+  
+  .exclusivas h1{
+    font-size: 25px;
+  }
+}
+
 /*Animação*/
 .revelacao {
   position: relative;

@@ -64,3 +64,39 @@ function abrirImagemCheia(ima){
 function fecharImagemCheia(){
   imagemCheiaBox.style.display = "none"
 }
+
+//Slider Carrosel
+
+const controls = document.querySelectorAll('.control')
+let currentitem = 0
+const items = document.querySelectorAll('.item')
+const maxItems = items.length
+
+controls.forEach(control => {
+  control.addEventListener('click', () => {
+    const isLeft = control.classList.contains("arrow-left")
+
+    if (isLeft) {
+      currentitem -= 1
+    } else {
+      currentitem += 1
+    }
+
+    if (currentitem >= maxItems) {
+      currentitem =0
+    }
+
+    if (currentitem < 0){
+      currentitem = maxItems - 1 
+    }
+
+    items.forEach(item => item.classList.remove('current-item')) 
+
+    items[currentitem].scrollIntoView({
+      inline: "center",
+      behavior:"smooth"
+    })
+
+    items[currentitem].classList.add("current-item")
+  })
+})

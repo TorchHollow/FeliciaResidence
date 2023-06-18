@@ -1,6 +1,6 @@
 # FeliciaResidence
 
-Um site sobre uma construtora
+Uma landing page de uma construtora, que está construindo um condomínio de apartamentos, com especificações de áreas, galeria de imagens mostrando os cômodos e benefícios.
 
 ![Captura de tela 2023-06-17 - 17 21 40](https://github.com/TorchHollow/FeliciaResidence/assets/104605866/3f9aed8e-7efe-411d-a97f-59270b0db12f)
 ![Captura de tela 2023-06-17 - 17 21 45](https://github.com/TorchHollow/FeliciaResidence/assets/104605866/70f4829d-148e-408f-b348-e8583294f446)

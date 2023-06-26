@@ -100,3 +100,25 @@ controls.forEach(control => {
     items[currentitem].classList.add("current-item")
   })
 })
+
+/*
+
+let i = 0
+function mover() {
+  if (i == 0){
+    i = 1
+    let elemen = document.getElementById("minhaBarra")
+    let width = 1
+    let id = setInterval(frame, 10)
+    function frame() {
+      if (width >= 100){
+        clearInterval(id)
+        i = 0
+      } else {
+        width++
+        elemen.style.width = width + "%"
+      }
+    }
+  }
+}
+*/

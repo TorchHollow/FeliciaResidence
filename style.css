@@ -651,7 +651,7 @@ body {
   transition: all 600ms ease-in-out;
 }
 
-.current-item{
+.current-item {
   opacity: 1;
 }
 
@@ -664,8 +664,8 @@ body {
 }
 
 .gallery-wrapper {
--ms-overflow-style: none;  
-scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .gallery-content {
@@ -708,13 +708,13 @@ scrollbar-width: none;
   }
 }
 
-@media (max-width:949px) and (min-width:751px){
+@media (max-width:949px) and (min-width:751px) {
   .exclusivas-areas img {
     width: 100%;
   }
 
   .container {
-    max-width:940px;
+    max-width: 940px;
     padding-top: 20px;
   }
 
@@ -723,9 +723,9 @@ scrollbar-width: none;
   }
 }
 
-@media (max-width:1900px) and (min-width:950px){
+@media (max-width:1900px) and (min-width:950px) {
   .container {
-    max-width:740px;
+    max-width: 740px;
     padding-top: 50px;
   }
 
@@ -734,33 +734,77 @@ scrollbar-width: none;
   }
 }
 
-.obs{
+.status {
   width: 100%;
   height: auto;
-  position: absolute;
-  top: 120%;
+  position: relative;
+  background-color: var(--cor-primaria);
 }
 
-.obs p{
+.status h1 {
+  font-family: var(--fonte-do-titulo);
+}
+
+.status-container {
+  border-radius: 25px 0px;
+}
+
+.status-container h2 {
+  font-family: var(--fonte-do-titulo);
+}
+
+.status-container p {
   font-family: var(--fonte-do-texto);
+}
+
+.meuProgresso {
+  width: 95%;
+  background-color: var(--cor-secundaria);
+  border-radius: 50px;
+
+}
+
+.minhaBarra {
+  width: 50%;
+  height: 30px;
+  background-color: #04AA6D;
   text-align: center;
+  line-height: 30px;
+  color: white;
 }
 
-@media screen and (max-width: 750px){
-  .obs{
+.minhaBarra1 {
+  width: 0%;
+  height: 30px;
+  background-color: #04AA6D;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .status {
+    position: absolute;
+    display: flex;
+    justify-content: center;
     top: 108%;
+    padding-top: 25px;
   }
-}
 
-@media (max-width:949px) and (min-width:751px){
-  .obs{
-    top: 118%;
+  .status h1 {
+    font-size: 25px;
+    padding-bottom: 10px;
   }
-}
 
-@media (max-width:1900px) and (min-width:950px){
-  .obs{
-    top: 115%;
+  .status-container {
+    padding-top: 10px;
+    background-color: var(--cor-do-titulo);
+    text-align: center;
+  }
+
+  .status-container p {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 

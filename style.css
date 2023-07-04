@@ -808,6 +808,63 @@ body {
   }
 }
 
+@media only screen and (min-width: 600px){
+  .status {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 108%;
+    padding-top: 25px;
+  }
+
+  .status h1 {
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+
+  .status-container {
+    padding-top: 10px;
+    background-color: var(--cor-do-titulo);
+    text-align: center;
+  }
+
+  .status-container p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .status {
+    position: absolute;
+    top: 118%;
+  }
+
+  .status h1 {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .status {
+    position: absolute;
+    top: 120%;
+  }
+
+  .status h1 {
+    font-size: 35px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .status h1 {
+    font-size: 55px;
+    padding-bottom: 10px;
+  }
+}
+
 /*Animação*/
 .revelacao {
   position: relative;
